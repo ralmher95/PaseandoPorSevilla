@@ -1,2 +1,0 @@
-<?php
-return ['x-generator'=>'GlotPress/4.0.3','translation-revision-date'=>'2023-12-22 17:27:10+0000','plural-forms'=>'nplurals=2; plural=n != 1;','project-id-version'=>'Plugins - 3CX Free Live Chat, Calls &amp; Messaging - Stable (latest release)','language'=>'en_GB','messages'=>['Reset 3CX Live Chat Configuration'=>'Reset 3CX Live Chat Configuration','Get 3CX'=>'Get 3CX']];
