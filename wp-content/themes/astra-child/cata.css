@@ -1,0 +1,205 @@
+/* =========================
+   Variables de Color
+========================= */
+
+:root {
+    --beige-claro: #f5efe6;
+    --beige-medio: #e8dfd1;
+    --marron-oscuro: #5a4636;
+    --marron-medio: #7a5c47;
+    --azul-ceramica: #3f6c7a;
+    --azul-ceramica-hover: #2e5562;
+    --blanco: #ffffff;
+}
+
+
+/* =========================
+   Base
+========================= */
+
+body {
+    background-color: var(--beige-claro);
+    color: var(--marron-oscuro);
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.cata-header {
+    background-color: var(--beige-medio);
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.cata-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--marron-oscuro);
+}
+
+.cata-price {
+    display: inline-block;
+    background-color: var(--blanco);
+    padding: 15px 25px;
+    border-radius: 40px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.price-amount {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--azul-ceramica);
+}
+
+.price-label {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--marron-medio);
+}
+
+
+/* =========================
+   Imagen destacada
+========================= */
+
+.cata-featured-image img {
+    width: 100%;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+
+/* =========================
+   Descripción
+========================= */
+
+.cata-description {
+    margin-bottom: 50px;
+}
+
+.cata-description h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--azul-ceramica);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.content-text {
+    font-size: 1.05rem;
+}
+
+
+/* =========================
+   Grid Detalles
+========================= */
+
+.cata-details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.detail-item {
+    background-color: var(--blanco);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-left: 4px solid var(--azul-ceramica);
+}
+
+.detail-item h3 {
+    margin-bottom: 10px;
+    color: var(--azul-ceramica);
+}
+
+
+/* =========================
+   Incluye / No Incluye
+========================= */
+
+.cata-includes,
+.cata-excludes {
+    margin-bottom: 40px;
+}
+
+.cata-includes h2,
+.cata-excludes h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.cata-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.cata-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--beige-medio);
+    position: relative;
+    padding-left: 25px;
+}
+
+.cata-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--azul-ceramica);
+    font-size: 1.2rem;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cata-cta {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.btn-reservar {
+    display: inline-block;
+    background-color: var(--azul-ceramica);
+    color: var(--blanco);
+    padding: 15px 35px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-reservar:hover {
+    background-color: var(--azul-ceramica-hover);
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 768px) {
+
+    .cata-title {
+        font-size: 2rem;
+    }
+
+    .price-amount {
+        font-size: 1.5rem;
+    }
+
+}

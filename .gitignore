@@ -1,0 +1,39 @@
+# ==========================
+# WordPress (portfolio repo)
+# ==========================
+
+# Core WordPress (si tu repo tuviera WP completo)
+wp-admin/
+wp-includes/
+
+# Seguridad: nunca subir config real
+wp-config.php
+.env
+.env.*
+*.key
+*.pem
+
+# Uploads (pesado y cambiante)
+wp-content/uploads/
+
+# Cachés y temporales
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backup*/
+wp-content/backups*/
+*.log
+
+# Dependencias (si aplicara en tools)
+node_modules/
+vendor/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Paquetes
+*.zip
+*.tar
+*.gz
